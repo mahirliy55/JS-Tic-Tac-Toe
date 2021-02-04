@@ -1,89 +1,70 @@
-.a1 {
-    position: absolute;
-    top: 50%;
-    right: 940px;
-    width: 155px;
-    height: 150px;
-    border: 4px solid black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.a2 {
-    position: relative;
-    top: 49.2vh;
-    left: 640px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black;
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
 }
 
-.a3 {
-    position: relative;
-    top: 32.6vh;
-    left: 949px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black;
+button {
+    outline: none;
+    border: 4px solid green;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: none;
+    transition: all 0.2s ease-in-out;
 }
 
-.a4 {
-    position: relative;
-    top: 32.1vh;
-    left: 949px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black;
+button:hover {
+    cursor: pointer;
+    background: green;
+    color: white;
 }
 
-.a5 {
-    position: relative;
-    top: 15.5vh;
-    left: 794px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black;
+.play-area {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: auto auto auto;
 }
 
-.a6 {
-    position: relative;
-    top: -1.1vh;
-    left: 794px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black;
+.block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 3px solid black;
+    transition: background 0.2s ease-in-out;
 }
 
-.a7 {
-    position: relative;
-    top: -18.1vh;
-    left: 640px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black
+.block:hover {
+    cursor: pointer;
 }
 
-.a8 {
-    position: relative;
-    top: -18.1vh;
-    left: 640px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black
+#block_0, #block_1, #block_2 {
+    border-top: none;
 }
 
-.a9 {
-    position: relative;
-    top: -34.8vh;
-    left: 795px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black
+#block_0, #block_3, #block_6 {
+    border-left: none;
 }
 
-.a10 {
-    position: relative;
-    top: -51.5vh;
-    left: 950px;
-    width: 150px;
-    height: 150px;
-    border: 4px solid black
+#block_6, #block_7, #block_8 {
+    border-bottom: none;
+}
+
+#block_2, #block_5, #block_8 {
+    border-right: none;
 }
